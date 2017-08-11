@@ -1,11 +1,11 @@
 {
-  "name": "pipitit",
-  "version": "0.0.1",
+  "name": "pipitit-node",
+  "version": "1.0.0",
   "description": "Pipitit NodeJS SDK.",
   "main": "lib/pipitit.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hyperether/pipitit-node.git"
+    "url": "git://github.com/hyperether/pipitit-node-sdk.git"
   },
   "keywords": [
     "pipitit",
