@@ -1,5 +1,5 @@
 **Pipitit**
-[![npm version](https://badge.fury.io/js/pipitit-node.png)](https://badge.fury.io/js/pipitit-node)  [![Build Status](https://secure.travis-ci.org/plivo/plivo-node.png?branch=master)](http://travis-ci.org/plivo/plivo-node) 
+[![npm version](https://badge.fury.io/js/pipitit-node.png)](https://badge.fury.io/js/pipitit-node)  [![Build Status](https://travis-ci.org/hyperether/pipitit-node-sdk.svg?branch=master)](https://travis-ci.org/hyperether/pipitit-node-sdk) 
 
 ![Pipitit Logo](https://github.com/hyperether/pipitit-android-sdk/blob/master/Pipitit_Logo_450x100.png)
 
