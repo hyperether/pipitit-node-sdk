@@ -1,0 +1,36 @@
+{
+  "name": "pipitit",
+  "version": "0.0.1",
+  "description": "Pipitit NodeJS SDK.",
+  "main": "lib/pipitit.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hyperether/pipitit-node.git"
+  },
+  "keywords": [
+    "pipitit",
+    "rest",
+    "api",
+    "notification",
+    "push",
+    "websocket",
+    "email",
+    "sms"
+  ],
+  "author": "Hyperether Team",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "request": "^2.71.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "nock": "~8.0.0",
+    "mocha": "~2.4.5"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  }
+}
