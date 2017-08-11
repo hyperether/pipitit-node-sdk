@@ -1,4 +1,5 @@
 **Pipitit**
+[![npm version](https://badge.fury.io/js/pipitit-node.png)](https://badge.fury.io/js/pipitit-node)  [![Build Status](https://secure.travis-ci.org/plivo/plivo-node.png?branch=master)](http://travis-ci.org/plivo/plivo-node) 
 
 ![Pipitit Logo](https://github.com/hyperether/pipitit-android-sdk/blob/master/Pipitit_Logo_450x100.png)
 
