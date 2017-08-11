@@ -15,7 +15,8 @@ Installation
 ---------------
 Installing using npm (node package manager):
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-npm install pipitit
+npm install pipitit-node
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## Dependencies
 
@@ -26,7 +27,34 @@ Dev Dependencies (for running tests):
 * [nock](https://github.com/flatiron/nock)
 * [mocha](http://visionmedia.github.com/mocha/)
 
-**Usage**
-        var pipitit = require('pipitit');
+## Initialisation
+        var pipitit = require('pipitit-node');
         
-        var pipit = pipitit.init({authId: '123', auth_secret: '123'});
+        var pipit = pipitit.init({
+            authId: '<your AUTH ID>', 
+            auth_secret: '<your AUTH SECRET>'
+        });
+        
+## Usage
+
+        pipit.app_create({name: 'test_app'}, function(status, response){
+            if (status != 200 ){
+                console.log('ERROR! Didn't create application.');
+                console.log('Status:', status);
+                console.log('Response:', response);
+            } else {
+                console.log('YEA! Successfully created application.');
+                console.log('Status:', status);
+                console.log('Response:', response);
+            }
+        })
+        
+## Tests
+To run tests:
+`npm test`
+or
+`mocha --reporter spec`
+
+## License
+-------
+*pipitit-node* is licensed under the MIT License.
