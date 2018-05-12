@@ -26,7 +26,7 @@ Required Dependencies:
 
 Dev Dependencies (for running tests):
 * [nock](https://github.com/flatiron/nock)
-* [mocha](http://visionmedia.github.com/mocha/)
+* [mocha](http://mochajs.org/)
 
 ## Initialisation
         var pipitit = require('pipitit-node');
