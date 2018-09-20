@@ -1,8 +1,14 @@
-**Tradeblock-node-sdk**
-[![npm version](https://badge.fury.io/js/tradeblock-node.png)](https://badge.fury.io/js/tradeblock-node)  [![Build Status](https://travis-ci.org/hyperether/tradeblock-node-sdk?branch=master)](https://travis-ci.org/hyperether/tradeblock-node-sdk) 
+**Pipitit**
+[![npm version](https://badge.fury.io/js/pipitit-node.png)](https://badge.fury.io/js/pipitit-node)  [![Build Status](https://travis-ci.org/hyperether/pipitit-node-sdk.svg?branch=master)](https://travis-ci.org/hyperether/pipitit-node-sdk) 
 
+![Pipitit Logo](https://github.com/hyperether/pipitit-android-sdk/blob/master/Pipitit_Logo_450x100.png)
 
-This SDK allows you to work with TradeBlock API 
+Pipitit allows you to send Push, SMS, Email and WebSocket notifications to your customers.
+
+Register multiple applications and get application key for each one of them. This way Pipitit allows you to target your clients on application premises.
+
+Track the status of each Campaign. Our dashboard allows you to track not only Campaign status, but the status of each message in specific Campaign.
+
 
 **Node.JS SDK**
 
@@ -10,7 +16,7 @@ Installation
 ---------------
 Installing using npm (node package manager):
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-npm install tradeblock-node
+npm install pipitit-node
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## Dependencies
@@ -23,16 +29,26 @@ Dev Dependencies (for running tests):
 * [mocha](http://mochajs.org/)
 
 ## Initialisation
-        var tradeblock = require('tradeblock-node');
+        var pipitit = require('pipitit-node');
         
-        var tradeAPI = tradeblock.init({
-            API_KEY: '<your AUTH KEY>', 
-            API_SECRET: '<your AUTH SECRET>'
+        var pipit = pipitit.init({
+            authId: '<your AUTH ID>', 
+            auth_secret: '<your AUTH SECRET>'
         });
         
 ## Usage
 
-        const response = await tradeAPI.listTrades()
+        pipit.app_create({name: 'test_app'}, function(status, response){
+            if (status != 200 ){
+                console.log('ERROR! Didn't create application.');
+                console.log('Status:', status);
+                console.log('Response:', response);
+            } else {
+                console.log('YEA! Successfully created application.');
+                console.log('Status:', status);
+                console.log('Response:', response);
+            }
+        })
         
 ## Tests
 To run tests:
@@ -42,4 +58,4 @@ or
 
 ## License
 -------
-*tradeblock-node* is licensed under the MIT License.
+*pipitit-node* is licensed under the MIT License.
